@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Course Enrollment | 3B Consulting</title>
+    <link rel="stylesheet" href="stylesheet/3Bstyles.css">
+</head>
+<body>
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Ehrreich Enterprises</a></li>
+                    <li><a href="index3B.html">3B Home</a></li>
+                    <li><a href="challenges.html">Your Challenges</a></li>
+                    <li><a href="solutions.html">Our Solutions</a></li>
+                    <li><a href="support.html">Support Services</a></li>
+                    <li><a href="insights.html">Insights &amp; Research</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact &amp; Enroll</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-compact">
+            <div class="container hero-content">
+                <h1>Contact &amp; Course Enrollment</h1>
+                <p>Ready to enroll in a 3B Consulting leadership module or request a custom enterprise proposal? Complete the validated inquiry form below and an advisor will respond within one business day.</p>
+            </div>
+        </section>
+
+        <section class="section bg-darker">
+            <div class="container form-layout">
+                <article class="form-card">
+                    <h2 class="section-title form-heading">Enrollment &amp; Consultation Form</h2>
+                    <p class="form-note">Fields marked with <span class="required-star">*</span> are required.</p>
+
+                    <form action="mailto:rangerbob_fit@icloud.com" method="post" enctype="text/plain" class="contact-form">
+                        <fieldset class="form-group-box">
+                            <legend>Contact Information</legend>
+
+                            <div class="form-row">
+                                <label for="fullName">Full Name <span class="required-star">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required minlength="2" maxlength="80" placeholder="Jane Doe">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="email">Work Email <span class="required-star">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="jane.doe@company.com">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="phone">Phone Number (Format: 555-123-4567) <span class="required-star">*</span></label>
+                                <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-123-4567" title="Please enter a 10-digit phone number in the format 555-123-4567">
+                            </div>
+
+                            <div class="form-row">
+                                <label for="organization">Organization &amp; Title <span class="required-star">*</span></label>
+                                <input type="text" id="organization" name="organization" required minlength="2" maxlength="100" placeholder="Director of Operations, Acme Corp">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group-box">
+                            <legend>Course &amp; Program Selection</legend>
+
+                            <div class="form-row">
+                                <label for="courseSelect">Select Course or Service <span class="required-star">*</span></label>
+                                <select id="courseSelect" name="courseSelect" required>
+                                    <option value="">-- Choose a Program --</option>
+                                    <option value="module1">Module 1: Self-Leadership &amp; Operational Resilience ($1,500)</option>
+                                    <option value="module2">Module 2: High-Performance Team Leadership ($6,000)</option>
+                                    <option value="module3">Module 3: Executive Advisory &amp; Performance Retainer ($1,500/mo)</option>
+                                    <option value="custom">Custom Corporate Workshop / Offsite</option>
+                                    <option value="general">General Leadership Consultation</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row-split">
+                                <div class="form-row">
+                                    <label for="teamSize">Number of Participants <span class="required-star">*</span></label>
+                                    <input type="number" id="teamSize" name="teamSize" required min="1" max="500" value="1">
+                                </div>
+
+                                <div class="form-row">
+                                    <label for="startDate">Target Start Date <span class="required-star">*</span></label>
+                                    <input type="date" id="startDate" name="startDate" required min="2026-11-25">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <span class="radio-label">Preferred Contact Method <span class="required-star">*</span></span>
+                                <div class="radio-group">
+                                    <label class="inline-option"><input type="radio" name="contactMethod" value="email" required checked> Email</label>
+                                    <label class="inline-option"><input type="radio" name="contactMethod" value="phone"> Phone</label>
+                                    <label class="inline-option"><input type="radio" name="contactMethod" value="video"> Video Call</label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="goals">Leadership Goals or Operational Challenges <span class="required-star">*</span></label>
+                                <textarea id="goals" name="goals" rows="5" required minlength="15" maxlength="1000" placeholder="Tell us about your team, current challenges, or what you want to achieve through this course..."></textarea>
+                            </div>
+
+                            <div class="form-row checkbox-row">
+                                <label class="inline-option">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    I confirm that the information provided is accurate and agree to be contacted by 3B Consulting. <span class="required-star">*</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                            <button type="reset" class="btn btn-secondary">Clear Form</button>
+                        </div>
+                    </form>
+                </article>
+
+                <aside class="contact-sidebar">
+                    <div class="card">
+                        <h3>Direct Headquarters</h3>
+                        <p><strong>3B Consulting</strong><br>A Division of Ehrreich Enterprises<br>Natick, Massachusetts (Boston Metro)</p>
+                        <p><strong>Email:</strong> <a href="mailto:rangerbob_fit@icloud.com" class="inline-link">rangerbob_fit@icloud.com</a></p>
+                        <p><strong>Support Hours:</strong> Mon&ndash;Fri, 7:00 AM &ndash; 6:00 PM EST</p>
+                        <a href="support.html" class="card-link">View Full Support Schedule &rarr;</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="images/3b-consulting-logo.png" alt="3B Consulting Logo" class="footer-logo">
+                <h4>3B Consulting</h4>
+                <p>Build. Business. Body. Blending 23 years of military operations leadership with applied sports psychology to build resilient leaders and high-performing organizations.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Ehrreich Enterprises</a></li>
+                    <li><a href="index3B.html">3B Consulting Home</a></li>
+                    <li><a href="about.html">About Us &amp; Team</a></li>
+                    <li><a href="insights.html">Insights &amp; Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs &amp; Support</h4>
+                <ul>
+                    <li><a href="solutions.html">Purchasable Courses</a></li>
+                    <li><a href="challenges.html">Organizational Challenges</a></li>
+                    <li><a href="support.html">Client Support Services</a></li>
+                    <li><a href="contact.html">Contact &amp; Enrollment</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 3B Consulting | A Division of Ehrreich Enterprises | <a href="mailto:rangerbob_fit@icloud.com">rangerbob_fit@icloud.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
